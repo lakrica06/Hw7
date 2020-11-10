@@ -21,7 +21,7 @@ public final class Person {
             return false;
         }
         Person person = (Person) obj;
-        return firstName == person.firstName && lastName == person.lastName && gender == person.gender;
+        return firstName.equals(person.firstName) && lastName.equals(person.lastName) && gender.equals(person.gender);
     }
 
     @Override
